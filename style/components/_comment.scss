@@ -1,0 +1,61 @@
+.comment {
+    margin-bottom: 7rem;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+        row-gap: 2 rem;
+
+        .box {
+            margin: auto;
+            width: 370px;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: flex-start;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            justify-content: space-between;
+            #hover {
+                display: none;
+            }
+
+            &:hover {
+                background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+                backdrop-filter: blur(10px);
+                /* Note: backdrop-filter has minimal browser support */
+                #hover{
+                    display: block;
+                }
+                #static{
+                    display: none;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            .info{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                h3{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+                span{
+                    font-size: 1rem;
+                    color: #aaa;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+@media (width < 768px){
+    .comment{
+        .container{
+            grid-template-columns: 1fr;
+        .box{
+            width: 100%;
+        }
+    }}
+}

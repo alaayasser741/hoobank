@@ -6,28 +6,24 @@ footer {
     .container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-        gap: 2rem;
-
+        gap: 3rem;
+        justify-items: center;
         .info {
-            line-height: 2;
-
-            img {
-                width: 210px;
-            }
-
-            a,
-            i {
-                color: var(--main-color);
-            }
-
-            i {
-                margin-right: .5rem;
-            }
-
-            .email,
-            .location {
+            .logo{
                 display: flex;
-                align-items: baseline;
+                align-items: center;
+                gap: .5rem;
+                margin-bottom: 2rem;
+                h1{
+                    font-weight: 500;
+                    span{
+                        color: var(--main-color);
+                    }
+                }
+            }
+            p{
+                font-weight: 400;
+                color: #aaa;
             }
         }
 
@@ -37,48 +33,17 @@ footer {
             margin-bottom: 1rem;
         }
 
-        .newsletter {
-            form {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-
-                input {
-                    outline: 0;
-                    border: 0;
-                    padding: .8rem;
-                    font-size: 1rem;
-                    background-color: var(--background-2);
-                    border-radius: 6px;
-                    -webkit-border-radius: 6px;
-                    -moz-border-radius: 6px;
-                    -ms-border-radius: 6px;
-                    -o-border-radius: 6px;
-
-                    &:focus {
-                        outline: 1px solid var(--main-color);
-                    }
-                }
-
-                input[type="submit"] {
-                    background-color: var(--main-color);
-                }
-            }
-        }
 
         .blog {
             line-height: 2;
             display: flex;
             flex-direction: column;
             a {
-                color: var(--white);
+                color: #aaa;
+                &:hover{
+                    color: var(--white);
+                }
             }
-        }
-        .partener{
-            display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            align-items: center;
         }
     }
 }
@@ -86,6 +51,21 @@ footer {
     background-color: var(--background);
     color: var(--white);
     padding: 1rem 0;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: -10px;
+        width: 70%;
+        height: 1px;
+        background-color: #3F3E45;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
     .container{
         display: flex;
         justify-content: space-between;

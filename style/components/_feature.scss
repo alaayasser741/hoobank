@@ -2,7 +2,7 @@
     .container {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: space-between;
         gap: 7rem;
         margin-bottom: 7rem;
         .txts {
@@ -187,6 +187,20 @@
                     font-size: 2rem;
                 }
             }
+        }
+    }
+}
+// 
+.say{
+    .container{
+        align-items: flex-end;
+        .feat{
+            h3{
+                font-size: 3rem;
+            }
+        }
+        .txts{
+            flex-basis: 35%;
         }
     }
 }
