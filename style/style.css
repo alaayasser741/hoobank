@@ -83,6 +83,10 @@ html::-webkit-scrollbar-thumb:hover {
 
 nav {
   max-height: 97px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 nav .container {
   padding: 0.93rem 0;
@@ -147,6 +151,15 @@ nav .container .links .close {
 .nav-group {
   background-image: none;
   background-color: var(--background-2);
+}
+
+.nav-colored {
+  background: var(--background);
+  z-index: 9999;
+}
+
+.nav-transparent {
+  background: transparent;
 }
 
 @media (max-width: 991px) {
@@ -331,6 +344,42 @@ nav .container .links .close {
   }
   .header .container h2 {
     font-size: 3rem;
+  }
+}
+.states {
+  margin-bottom: 9rem;
+}
+.states .container {
+  display: flex;
+  justify-content: space-between;
+}
+.states .container .state {
+  margin: auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  position: relative;
+}
+.states .container .state h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.states .container .state span {
+  color: var(--main-color);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media (width < 991px) {
+  .states .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .states .container .state {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 footer {

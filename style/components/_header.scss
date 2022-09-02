@@ -1,7 +1,9 @@
 nav {
     max-height: 97px;
-    // position: fixed;
-    // width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     .container {
         padding: .93rem 0;
@@ -79,6 +81,13 @@ nav {
 .nav-group{
     background-image: none;
     background-color: var(--background-2);
+}
+.nav-colored{
+    background: var(--background);
+    z-index: 9999;
+}
+.nav-transparent{
+    background: transparent;
 }
 @media (max-width:991px) {
     nav {
