@@ -7,12 +7,16 @@ if (navbarToggle) {
   navbarToggle.addEventListener("click", () => {
     sideMenu.style.left = "0";
     overlay.style.display = "block";
+    myNav.classList.add("nav-colored");
+    myNav.classList.remove("nav-transparent");
   });
 }
 if (closeSideMenu) {
   closeSideMenu.addEventListener("click", () => {
     sideMenu.style.left = "-105%";
     overlay.style.display = "none";
+    myNav.classList.add("nav-transparent");
+    myNav.classList.remove("nav-colored");
   });
 }
 if (overlay) {

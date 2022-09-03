@@ -87,6 +87,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99999;
 }
 nav .container {
   padding: 0.93rem 0;
@@ -647,8 +648,31 @@ nav .container .links .close {
   padding: 1rem 2rem;
   font-weight: 400;
   color: var(--black);
+  display: block;
 }
 
+@media (width < 768px) {
+  .getStarted .container .box {
+    flex-direction: column;
+  }
+  .getStarted .container .box .txt {
+    text-align: center;
+  }
+  .getStarted .container .box .txt h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .getStarted .container .box .txt p {
+    width: 100%;
+  }
+  .getStarted .container .box .btn {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .getStarted .container .box .btn a {
+    display: block;
+  }
+}
 footer {
   background-color: var(--background);
   color: var(--white);
