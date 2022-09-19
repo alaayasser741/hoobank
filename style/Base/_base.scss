@@ -51,7 +51,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 /* Small */
-@media (min-width:768px) {
+@media (width < 768px) {
     .container {
         width: 750px;
     }

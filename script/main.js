@@ -1,7 +1,7 @@
-let navbarToggle = document.querySelector(".toggle i");
-let closeSideMenu = document.querySelector(".close i");
-let sideMenu = document.querySelector(".links");
-let overlay = document.querySelector(".overlay");
+const navbarToggle = document.querySelector(".toggle i");
+const closeSideMenu = document.querySelector(".close i");
+const sideMenu = document.querySelector(".links");
+const overlay = document.querySelector(".overlay");
 
 if (navbarToggle) {
   navbarToggle.addEventListener("click", () => {
@@ -26,8 +26,7 @@ if (overlay) {
   });
 }
 // nav Scroll
-let myNav = document.querySelector("#nav");
-console.log(myNav)
+const myNav = document.querySelector("#nav");
 window.onscroll = function () {
   if (document.body.scrollTop >= 97|| document.documentElement.scrollTop > 97) {
     myNav.classList.add("nav-colored");
